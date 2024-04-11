@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ColorTheme } from '../../theme/Theme';
 
 
 const menuItem = [
@@ -44,18 +45,22 @@ export const Menu = () => {
 
 
 const StyledMenu = styled.nav`
-    
+    padding:32px 0;
+    border-bottom:1px solid ${ColorTheme.fontcolors.secondfont};
 `
 
 const ListMenu = styled.ul`
     display:flex;
     gap:40px;
-    justify-content:center;
+    justify-content:space-between;
 `
 const MenuItem = styled.li`
     
 `
 const Item = styled.a`
-    
+    font-size:18px;
+    font-weight:600;
+    line-height:-1px;
+    color:${ColorTheme.fontcolors.secondfont};
 `
 
