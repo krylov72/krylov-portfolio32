@@ -12,7 +12,8 @@ export const Main = () => {
                 <Name>Denis<br></br>Novik</Name>
                 <Description>UX | UI designer<br></br>24 years old, Minsk</Description>
                 <LangSlider>
-                    <Lang href="">RU|ENG</Lang>
+                    <Lang href="">ENG</Lang>
+                    <Lang href="">RU</Lang>
                 </LangSlider>
                 </TextBlock>
                 <MainPhoto src={mainImage} />
@@ -52,11 +53,17 @@ const Description = styled.h1`
     text-align:center;
 `
 const LangSlider = styled.div`
-    
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    align-self:flex-end;
 `
 const Lang = styled.a`
     writing-mode:vertical-rl;
-    transform:rotate(180deg)
+    color: ${ColorTheme.fontcolors.secondfont};
+    transform:rotate(180deg);
+    font-size: 16px;
+    font-weight: 400;
 `
 
 const MainPhoto = styled.img`

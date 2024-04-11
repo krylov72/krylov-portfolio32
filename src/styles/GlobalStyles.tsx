@@ -22,6 +22,13 @@ export const GlobalStyles = createGlobalStyle`
 
 }
 
+h4{
+    color: ${ColorTheme.fontcolors.secondfont};
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
 li{
     list-style:none;
 }
@@ -31,9 +38,6 @@ a{
 
 main{
     padding-bottom:105px;
-}
-section{
-padding-bottom:105px;
 }
 section:nth-child(odd){
     background-color: ${ColorTheme.colors.secondbg};

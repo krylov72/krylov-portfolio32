@@ -119,7 +119,15 @@ function Rating(props: any) {
 
 export const StyledSkill = styled.div`
     display:flex;
-    gap:50px;
+    gap:90px;
+    max-width:166px;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+
+    &>${FlexWrapper}{
+        gap:25px;
+    }
 `
 export const IconWrapper = styled.div`
     display:flex;

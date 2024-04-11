@@ -15,7 +15,7 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.section`
-    padding-top:120px;
+    padding-bottom:107px;
     display:flex;
     justify-content:center;
     &>${FlexWrapper} {
@@ -29,5 +29,6 @@ export const Text = styled.p`
     font-size: 18px;
     font-weight: 400;
     line-height: -1px;
+    margin-top:20px;
 `
 

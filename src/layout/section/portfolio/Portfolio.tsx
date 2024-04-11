@@ -20,4 +20,6 @@ export const Portfolio = () => {
 
 const StyledPortfolio = styled.section`
     
-`
+    `
+        
+    
