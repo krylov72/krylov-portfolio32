@@ -16,6 +16,7 @@ export const SectionTitle = (props: StyledTitlePropsType) => {
 
 
 export const StyledTitle = styled.h3`
+margin-top:100px;
     color: ${ColorTheme.fontcolors.mainfont};
     font-size: 34px;
     font-weight: 700;
