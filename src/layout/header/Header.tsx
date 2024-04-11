@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Menu } from '../../components/menu/Menu';
+import { Container } from '../../components/Container';
+
+
 
 export const Header = () => {
     return (
-        <div>
-            <StyledHeader>
+        <StyledHeader>
+            <Container>
                 <Menu />
-            </StyledHeader>
-        </div>
+            </Container>
+        </StyledHeader>
     );
 };
 
