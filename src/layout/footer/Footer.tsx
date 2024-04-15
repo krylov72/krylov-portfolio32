@@ -5,6 +5,7 @@ import { IconWrapper } from '../section/skills/skill/Skill';
 import { Icon } from '../../components/icon/Icon';
 import { Container } from '../../components/Container';
 import { ColorTheme } from '../../styles/Theme';
+import { font } from '../../styles/Common';
 
 export const Footer = () => {
     return (
@@ -26,21 +27,21 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-padding:85px 0 123px;
 
 
 `
 
 const SocialWrapper = styled.div`
     display:flex;
-    gap:45px;
+    gap:20px 20px;
     flex-wrap:wrap;
+    justify-content:center;
+    flex-grow:1;
 `
 
 const Copyright = styled.small`
     margin-top:45px;
+    ${font({weight:400, Fmax:14, Fmin:11})};
     color: ${ColorTheme.fontcolors.secondfont};
-    font-size: 14px;
-    font-weight: 400;
     text-align: center;
 `

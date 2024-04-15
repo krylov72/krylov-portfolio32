@@ -53,6 +53,18 @@ section {
 section:nth-last-child(3){
     padding-bottom:0;
 }
+
+section:nth-child(6){
+    padding-bottom:0;
+}
+
+footer {
+    padding:90px 0 50px;
+
+    @media ${ColorTheme.media.mobile} {
+        padding: 40px 0 20px;
+    }
+}
 section:nth-child(odd){
     background-color: ${ColorTheme.colors.secondbg};
 }

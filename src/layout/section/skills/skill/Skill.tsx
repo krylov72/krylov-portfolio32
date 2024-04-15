@@ -120,8 +120,9 @@ function Rating(props: any) {
 export const StyledSkill = styled.div`
     display:flex;
     flex-direction:row;
-    gap:90px;
+    gap:50px;
     flex-wrap:wrap;
+    flex-grow:1;
 
     align-items:center;
     justify-content:center;
