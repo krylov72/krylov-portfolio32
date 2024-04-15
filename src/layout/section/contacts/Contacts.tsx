@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
-import { ColorTheme } from '../../../theme/Theme';
+import { ColorTheme } from '../../../styles/Theme';
+import { Button } from '../../../components/Button';
+import { font } from '../../../styles/Common';
 
 export const Contacts = () => {
     return (
@@ -10,7 +12,7 @@ export const Contacts = () => {
             <FlexWrapper direction='column' align='center'>
                 <SectionTitle title='Contacts' />
                 <Description>Want to know more or just chat? You are welcome!</Description>
-                <Button href="">Send message</Button>
+                <Button btnType='primary'>Send message</Button>
             </FlexWrapper>
         </StyledContacts>
     );
@@ -22,13 +24,8 @@ const StyledContacts = styled.section`
 
 const Description = styled.p`
 margin:20px 0 30px;
+    ${font({weight:500, Fmax:18, Fmin:13})};
     max-width:275px;
     width:100%;
-    color: ${ColorTheme.fontcolors.mainfont};
-    font-size: 18px;
-    font-weight: 500;
     text-align: center;
-`
-
-const Button = styled.a`
 `

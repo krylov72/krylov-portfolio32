@@ -4,7 +4,8 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
 import { Container } from '../../../components/Container';
-import { ColorTheme } from '../../../theme/Theme';
+import { ColorTheme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 export const Skills = () => {
     return (
@@ -25,16 +26,18 @@ export const Skills = () => {
 
 
 const StyledSkills = styled.section`
-padding-bottom:105px;
 `
 
 const Description = styled.p`
+    ${font({weight:500, Fmax:18, Fmin:13})};
     margin:70px 0 84px;
     color: ${ColorTheme.fontcolors.mainfont};
-    font-size: 18px;
-    font-weight: 500;
+
+    @media ${ColorTheme.media.tablet} {
+        margin:40px 0 50px;
+    }
 `
 
 const SkillsWrapper = styled.div`
-    
+display:block;
 `

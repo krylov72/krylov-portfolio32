@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { ColorTheme } from "../theme/Theme";
+import { ColorTheme } from "./Theme";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -38,9 +38,33 @@ a{
 
 main{
     padding-bottom:105px;
+    @media ${ColorTheme.media.tablet}{
+        padding-bottom:70px;
+    }
+}
+
+section {
+    padding:100px 0 105px;
+    @media ${ColorTheme.media.tablet}{
+        padding:60px 0 65px;
+    }
+}
+
+section:nth-last-child(3){
+    padding-bottom:0;
 }
 section:nth-child(odd){
     background-color: ${ColorTheme.colors.secondbg};
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 `

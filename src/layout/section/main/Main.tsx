@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import mainImage from '../../../assets/images/main.webp';
 import { Container } from '../../../components/Container';
-import { ColorTheme } from '../../../theme/Theme';
+import { ColorTheme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 export const Main = () => {
     return (
@@ -38,17 +39,11 @@ const TextBlock = styled.div`
     padding-bottom:30px;
 `
 const Name = styled.h2`
-    color: ${ColorTheme.fontcolors.mainfont};
-    font-size: 47px;
-    font-weight: 800;
-    line-height: -1px;
+    ${font({weight:800, Fmax:47, Fmin:30})};
     text-align: left;
 `
 const Description = styled.h1`
-    color: ${ColorTheme.fontcolors.mainfont};
-    font-size: 18px;
-    font-weight: 400;
-    line-height: -1px;
+    ${font({weight:400, Fmax:18, Fmin:12})};
     align-self:flex-end;
     text-align:center;
 `
@@ -59,16 +54,16 @@ const LangSlider = styled.div`
     align-self:flex-end;
 `
 const Lang = styled.a`
+${font({weight:400, Fmax:16, Fmin:12})};
     writing-mode:vertical-rl;
     color: ${ColorTheme.fontcolors.secondfont};
     transform:rotate(180deg);
-    font-size: 16px;
-    font-weight: 400;
 `
 
 const MainPhoto = styled.img`
-    width:944px;
-    height: 387px;
+    max-width:944px;
+    width:100%;
+    max-height: 387px;
     object-fit:cover;
     object-position: 0 44%;
 

@@ -4,7 +4,7 @@ import { FlexWrapper } from '../../components/FlexWrapper';
 import { IconWrapper } from '../section/skills/skill/Skill';
 import { Icon } from '../../components/icon/Icon';
 import { Container } from '../../components/Container';
-import { ColorTheme } from '../../theme/Theme';
+import { ColorTheme } from '../../styles/Theme';
 
 export const Footer = () => {
     return (
@@ -34,6 +34,7 @@ padding:85px 0 123px;
 const SocialWrapper = styled.div`
     display:flex;
     gap:45px;
+    flex-wrap:wrap;
 `
 
 const Copyright = styled.small`

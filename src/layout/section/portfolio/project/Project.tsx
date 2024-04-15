@@ -4,7 +4,7 @@ import pj1 from '../../../../assets/images/project-1.webp';
 import pj2 from '../../../../assets/images/project 2.webp';
 import pj3 from '../../../../assets/images/project 3.webp';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
-import { ColorTheme } from '../../../../theme/Theme';
+import { ColorTheme } from '../../../../styles/Theme';
 
 
 const projectItem = [
@@ -41,8 +41,15 @@ export const StyledProject = styled.div`
 `
 
 export const ProjectImg = styled.img`
-    width: 936px;
-    height: 522px;
+    max-width: 936px;
+    width:100%;
+    max-height: 522px;
+    height:100%;
+    object-fit:cover;
+
+    @media ${ColorTheme.media.tablet} {
+        padding:0 10px;
+    }
 `
 
 export const ProjectName = styled.a`
