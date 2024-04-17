@@ -6,7 +6,7 @@ import { font } from '../../../styles/Common';
 import { Container } from '../../../components/Container';
 
 
-export const AboutMe = () => {
+export const AboutMe:React.FC = () => {
     return (
         <StyledAboutMe>
             <Container>

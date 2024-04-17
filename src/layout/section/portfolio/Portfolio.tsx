@@ -1,25 +1,23 @@
-import React from 'react';
-import styled from 'styled-components';
+
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Project } from './project/Project';
 import { Container } from '../../../components/Container';
+import { S } from './Portfolio_Styles';
 
-export const Portfolio = () => {
+export const Portfolio:React.FC = () => {
     return (
-        <StyledPortfolio>
+        <S.Portfolio>
             <Container>
                 <FlexWrapper direction='column' align='center'>
                     <SectionTitle title='Portfolio' />
                     <Project />
                 </FlexWrapper>
             </Container>
-        </StyledPortfolio>
+        </S.Portfolio>
     );
 };
 
-const StyledPortfolio = styled.section`
-    
-    `
+
         
     

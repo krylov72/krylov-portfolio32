@@ -10,7 +10,7 @@ type IconPropsType = {
     selected?: boolean
 }
 
-export const Icon = (props:IconPropsType) => {
+export const Icon:React.FC<IconPropsType> = (props:IconPropsType) => {
     return (
         <div>
             <svg width={props.width || '20px'} height={props.height || '20px'} viewBox={props.viewbox || '0 0 22 22'} fill="none" xmlns="http://www.w3.org/2000/svg" color={props.color}>
