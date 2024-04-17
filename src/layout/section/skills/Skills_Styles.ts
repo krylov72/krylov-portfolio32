@@ -24,6 +24,8 @@ const Description = styled.p`
  const Skill = styled.div`
     display:flex;   
     justify-content:space-between;
+    flex-wrap:wrap;
+    row-gap:60px;
 `
  const IconWrapper = styled.div`
     display:flex;
