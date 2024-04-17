@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../components/FlexWrapper';
-import { IconWrapper } from '../section/skills/skill/Skill';
 import { Icon } from '../../components/icon/Icon';
 import { Container } from '../../components/Container';
 import { ColorTheme } from '../../styles/Theme';
@@ -33,7 +32,7 @@ const StyledFooter = styled.footer`
 
 const SocialWrapper = styled.div`
     display:flex;
-    gap:20px 20px;
+    gap:20px 40px;
     flex-wrap:wrap;
     justify-content:center;
     flex-grow:1;

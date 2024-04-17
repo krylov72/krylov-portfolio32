@@ -11,6 +11,7 @@ ${props => props.btnType === 'primary' && css<ButtonPropsType>`
     max-width:180px;
     width:100%;
     height: 42px;
+    border-radius:40px;
      ${font({weight:600, Fmax:15, Fmin:10})};
     color:${ColorTheme.colors.firstbg};
 `}

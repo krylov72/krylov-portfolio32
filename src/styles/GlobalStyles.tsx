@@ -37,14 +37,14 @@ a{
 }
 
 main{
-    padding-bottom:105px;
+    padding-bottom:101px;
     @media ${ColorTheme.media.tablet}{
         padding-bottom:70px;
     }
 }
 
 section {
-    padding:100px 0 105px;
+    padding:100px 0 129px;
     @media ${ColorTheme.media.tablet}{
         padding:60px 0 65px;
     }

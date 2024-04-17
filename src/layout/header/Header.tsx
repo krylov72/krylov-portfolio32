@@ -1,22 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Menu } from '../../components/menu/Menu';
+import { DesktopMenu } from './headerMenu/desktopMenu/DesktopMenu';
 import { Container } from '../../components/Container';
-import { MobileMenu } from '../../components/mobileMenu/MobileMenu';
+import { MobileMenu } from './headerMenu/mobileMenu/MobileMenu';
+import {S} from './Header_Styles';
 
 
 
-export const Header = () => {
+export const Header: React.FC = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+    
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
-                <Menu />
-                <MobileMenu />
+                {width < breakpoint? <MobileMenu /> : <DesktopMenu />}
             </Container>
-        </StyledHeader>
+        </S.Header>
     );
 };
 
-const StyledHeader = styled.header`
-    
-`
+
