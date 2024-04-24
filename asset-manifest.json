@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/krylov-portfolio32/static/js/main.7f0a1365.js",
+    "main.js": "/krylov-portfolio32/static/js/main.65dd2b56.js",
     "static/js/453.019c902d.chunk.js": "/krylov-portfolio32/static/js/453.019c902d.chunk.js",
     "static/media/main.webp": "/krylov-portfolio32/static/media/main.7b66398a05386e16f4e9.webp",
-    "static/media/icons-sprite.svg": "/krylov-portfolio32/static/media/icons-sprite.bf494098eed102e49cf0d8dde892bbe1.svg",
+    "static/media/icons-sprite.svg": "/krylov-portfolio32/static/media/icons-sprite.fbf671ce6281d84b4e683b6ab1e73345.svg",
     "static/media/project 3.webp": "/krylov-portfolio32/static/media/project 3.6c283bc791da071388f4.webp",
     "static/media/project 2.webp": "/krylov-portfolio32/static/media/project 2.e69f22d95b2b30e141a8.webp",
     "static/media/project-1.webp": "/krylov-portfolio32/static/media/project-1.d06a40ee84840a374c34.webp",
@@ -12,10 +12,10 @@
     "static/media/PS.webp": "/krylov-portfolio32/static/media/PS.810bb1f272cf6c0f6343.webp",
     "static/media/FIGMA.webp": "/krylov-portfolio32/static/media/FIGMA.4ce06911d4a4810013bf.webp",
     "index.html": "/krylov-portfolio32/index.html",
-    "main.7f0a1365.js.map": "/krylov-portfolio32/static/js/main.7f0a1365.js.map",
+    "main.65dd2b56.js.map": "/krylov-portfolio32/static/js/main.65dd2b56.js.map",
     "453.019c902d.chunk.js.map": "/krylov-portfolio32/static/js/453.019c902d.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7f0a1365.js"
+    "static/js/main.65dd2b56.js"
   ]
 }
