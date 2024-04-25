@@ -7,7 +7,7 @@ import { S } from './Portfolio_Styles';
 
 export const Portfolio:React.FC = () => {
     return (
-        <S.Portfolio>
+        <S.Portfolio id='portfolio'>
             <Container>
                 <FlexWrapper direction='column' align='center'>
                     <SectionTitle title='Portfolio' />

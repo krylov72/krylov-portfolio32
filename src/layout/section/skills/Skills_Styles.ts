@@ -7,6 +7,7 @@ import { ColorTheme } from "../../../styles/Theme"
 
 //Skills
 const Skills = styled.section`
+position:relative;
 `
 
 const Description = styled.p`
@@ -32,9 +33,13 @@ const Description = styled.p`
     gap:10px;
 `
 
+const SkillText = styled.h4`
+`
+
 export const S = {
     Skills,
     Description,
     Skill,
-    IconWrapper
+    IconWrapper,
+    SkillText
 }

@@ -3,7 +3,7 @@ import { ColorTheme } from "../../../styles/Theme"
 import { font } from "../../../styles/Common"
 
 const Main = styled.main`
-    min-height:60vh;
+    height:80vh;
     display:block;
     justify-content:space-between;
     align-items:center;
@@ -24,6 +24,9 @@ const Description = styled.h1`
     align-self:flex-end;
     text-align:center;
     margin-bottom:11px;
+    &>p{
+        display:none;
+    }
 `
 const LangSlider = styled.div`
     display:flex;

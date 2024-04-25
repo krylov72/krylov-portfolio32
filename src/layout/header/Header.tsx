@@ -15,8 +15,9 @@ export const Header: React.FC = () => {
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
+  
     return (
-        <S.Header>
+        <S.Header id ='header'>
             <Container>
                 {width < breakpoint? <MobileMenu /> : <DesktopMenu />}
             </Container>

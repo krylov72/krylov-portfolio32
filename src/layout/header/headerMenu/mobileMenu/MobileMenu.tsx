@@ -1,20 +1,22 @@
 import { Menu } from '../menu/Menu';
 import { S } from '../HeaderMenu_Styles';
+import { useState } from 'react';
+import Typewriter from 'typewriter-effect';
 
 
 export const MobileMenu = () => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => { setMenuIsOpen(!menuIsOpen) }
     return (
-        <div>
             <S.MobileMenu>
-                <S.BurgerButton isOpen={false}>
+                <S.BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                     <span></span>
                 </S.BurgerButton>
-                <S.MobileMenuPopup isOpen={false}>
-                    <Menu />
+                <S.MobileMenuPopup isOpen={menuIsOpen} onClick={()=>{setMenuIsOpen(false)}}>
+                    <Menu/>
                 </S.MobileMenuPopup>
 
             </S.MobileMenu>
-        </div>
     );
 };
 

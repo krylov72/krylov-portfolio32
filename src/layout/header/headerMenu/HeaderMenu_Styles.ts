@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components"
 import { ColorTheme } from "../../../styles/Theme"
 import { MenuAnimation, MenuAnimationNotHover } from "../../../components/Animations"
+import { Link } from 'react-scroll';
 
 const ListMenu = styled.ul`
     display:flex;
@@ -8,27 +9,32 @@ const ListMenu = styled.ul`
     gap:40px;
     justify-content:space-between;
     @media ${ColorTheme.media.tablet} {
-        display:none;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
     }
 `
 const MenuItem = styled.li`
  &:hover {
-        animation: ${MenuAnimation} 0.8s ease;
+        animation: ${MenuAnimation} 0.2s ease-in-out;
         animation-fill-mode:forwards;
     }
     &:not(:hover) {
-        animation: ${MenuAnimationNotHover} 0.8s ease;
+        animation: ${MenuAnimationNotHover} 0.2s ease-in-out;
     }
     
 `
-const Item = styled.a`
+const Item = styled(Link)`
     font-size:18px;
     font-weight:600;
     line-height:-1px;
     color:${ColorTheme.fontcolors.secondfont};
 
-    &:hover{
+    &:hover, &.active{
         transition: color 1s;
+        animation: ${MenuAnimation} 0.2s ease-in-out;
+        animation-fill-mode:forwards;
         color: ${ColorTheme.fontcolors.mainfont};
     }
    
@@ -44,19 +50,22 @@ const MobileMenu = styled.nav`
 `
 
 const MobileMenuPopup = styled.div<{isOpen: boolean}>`
-position:fixed;
-background-color: rgba(31,31,32,0.9);
-top:0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index:9999;
-display:none;
-
-${props => props.isOpen && css<{isOpen: boolean}>`
+    position:fixed;
+    background-color: rgba(31,31,32,0.9);
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:9999;
+    display:none;
     display:flex;
     justify-content:center;
     align-items:center;
+    transform:translateY(-100%);
+    transition:0.5s ease-in-out;
+
+${props => props.isOpen && css<{isOpen: boolean}>`
+transform:translateY(0%);
 `}
     
 `

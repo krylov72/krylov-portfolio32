@@ -6,6 +6,7 @@ import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { Icon } from '../../../../components/icon/Icon';
 import { S } from '../Skills_Styles';
 
+
 const skillsList = [
     {
         id: 0,
@@ -33,15 +34,15 @@ const skillsList = [
     }
 ]
 
-export const Skill:React.FC = () => {
+export const Skill: React.FC = () => {
     return (
         <S.Skill>
             {skillsList.map((item, id) => (
-                <FlexWrapper key={id} direction='column' align='center' gap='30px'>
-                    <img src={item.src} alt="" />
-                    <h4>{item.name}</h4>
-                    <Rating value={item.value} />
-                </FlexWrapper>
+                     <FlexWrapper key={id} direction='column' align='center' gap='30px'>
+                        <img src={item.src} alt="" />
+                        <S.SkillText>{item.name}</S.SkillText>
+                        <Rating value={item.value} />
+                    </FlexWrapper>
             )
             )}
         </S.Skill>

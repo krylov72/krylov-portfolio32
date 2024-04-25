@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { font } from "../../../styles/Common"
 
 const Contacts = styled.section`
-
+position:relative;
 `
 
 const Description = styled.p`

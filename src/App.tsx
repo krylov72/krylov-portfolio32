@@ -7,10 +7,13 @@ import { Skills } from './layout/section/skills/Skills';
 import { Portfolio } from './layout/section/portfolio/Portfolio';
 import { Contacts } from './layout/section/contacts/Contacts';
 import { Footer } from './layout/footer/Footer';
+import { Particle } from './components/particle/Particle';
+import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 
 function App() {
   return (
     <div className="App">
+      <Particle />
       <Header />
       <Main />
       <AboutMe />
@@ -18,6 +21,7 @@ function App() {
       <Portfolio />
       <Contacts />
       <Footer />
+      <GoTopBtn/>
     </div>
   );
 }

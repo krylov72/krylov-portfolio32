@@ -5,15 +5,15 @@ import { Container } from '../../../components/Container';
 import { S } from './Skills_Styles';
 
 
-export const Skills:React.FC = () => {
+export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id='skills'>
             <Container>
                 <SectionTitle title='Skills' />
                 <S.Description>I work in such programs as</S.Description>
-                <FlexWrapper direction='column' align='stretch' justify='space-between' wrap='wrap'>
-                    <Skill />
-                </FlexWrapper>
+                    <FlexWrapper direction='column' align='stretch' justify='space-between' wrap='wrap'>
+                        <Skill />
+                    </FlexWrapper>
             </Container>
         </S.Skills>
     );

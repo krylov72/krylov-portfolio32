@@ -35,14 +35,15 @@ li{
 a{
     text-decoration:none;
     cursor: pointer;
+    &:active, &:focus {
+	outline: none;
+}
+&::-moz-focus-inner {
+	border: 0;
+}
 }
 
-main{
-    padding-bottom:101px;
-    @media ${ColorTheme.media.tablet}{
-        padding-bottom:70px;
-    }
-}
+
 
 section {
     padding:100px 0 129px;
@@ -51,13 +52,6 @@ section {
     }
 }
 
-section:nth-last-child(3){
-    padding-bottom:0;
-}
-
-section:nth-child(6){
-    padding-bottom:0;
-}
 
 footer {
     padding:90px 0 50px;
@@ -78,6 +72,12 @@ button{
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+
+    &:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
 }
 
 `
