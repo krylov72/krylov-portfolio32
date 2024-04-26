@@ -3,7 +3,7 @@ import pj2 from '../../../../assets/images/project 2.webp';
 import pj3 from '../../../../assets/images/project 3.webp';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { S } from '../Portfolio_Styles';
-import { Fade } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 
 
 const projectItem = [
@@ -26,9 +26,9 @@ export const Project:React.FC = () => {
         <S.Project>
             {projectItem.map((item, index) => (
                 <FlexWrapper key={index} direction='column' align='center'>
-                    <Fade delay={50}>
+                    <Slide delay={50}>
                         <S.ProjectImg src={item.src} alt="" />
-                    </Fade>
+                    </Slide>
                     <S.ProjectName href="">{item.name}</S.ProjectName>
                 </FlexWrapper>
             ))}

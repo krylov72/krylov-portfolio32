@@ -13,12 +13,14 @@ margin-top:50px;
 `
 
 const ProjectImg = styled.img`
+position:relative;
 max-width: 936px;
 width:100%;
 max-height: 522px;
 height:100%;
 object-fit:cover;
-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+z-index:1;
 
 @media ${ColorTheme.media.tablet} {
     padding:0 10px;

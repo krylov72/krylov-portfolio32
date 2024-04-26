@@ -1,8 +1,10 @@
+import { FlexWrapper } from './../../../components/FlexWrapper';
 
 
 import styled from "styled-components"
 import { font } from "../../../styles/Common"
 import { ColorTheme } from "../../../styles/Theme"
+import { JackInTheBox } from 'react-awesome-reveal';
 
 
 //Skills
@@ -27,6 +29,11 @@ const Description = styled.p`
     justify-content:space-between;
     flex-wrap:wrap;
     row-gap:60px;
+
+    &>${FlexWrapper} {
+        padding:15px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
 `
  const IconWrapper = styled.div`
     display:flex;

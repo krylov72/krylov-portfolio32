@@ -5,6 +5,7 @@ import FIGMA from '../../../../assets/images/FIGMA.webp';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { Icon } from '../../../../components/icon/Icon';
 import { S } from '../Skills_Styles';
+import { JackInTheBox, Zoom } from 'react-awesome-reveal';
 
 
 const skillsList = [
@@ -38,14 +39,18 @@ export const Skill: React.FC = () => {
     return (
         <S.Skill>
             {skillsList.map((item, id) => (
-                     <FlexWrapper key={id} direction='column' align='center' gap='30px'>
+                <FlexWrapper key={id} direction='column' align='center' gap='30px'>
+                    <Zoom >
                         <img src={item.src} alt="" />
                         <S.SkillText>{item.name}</S.SkillText>
                         <Rating value={item.value} />
-                    </FlexWrapper>
-            )
+                    </Zoom>
+                </FlexWrapper>
+                   
+
+    )
             )}
-        </S.Skill>
+        </S.Skill >
     );
 };
 
