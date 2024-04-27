@@ -4,6 +4,7 @@ import { font } from "../styles/Common";
 
 type ButtonPropsType = {
     btnType: "primary" | "outlined"
+    isOpen?: boolean
 }
 export const Button = styled.button<ButtonPropsType>`
 ${props => props.btnType === 'primary' && css<ButtonPropsType>`
