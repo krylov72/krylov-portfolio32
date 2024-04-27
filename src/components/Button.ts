@@ -3,7 +3,7 @@ import { ColorTheme } from "../styles/Theme";
 import { font } from "../styles/Common";
 
 type ButtonPropsType = {
-    btnType: "primary" | "outlined"
+    btnType?: "primary" | "outlined"
     isOpen?: boolean
 }
 export const Button = styled.button<ButtonPropsType>`
