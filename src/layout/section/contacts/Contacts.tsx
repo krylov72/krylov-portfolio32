@@ -49,7 +49,7 @@ export const Contacts: React.FC = () => {
                         <S.FormName htmlFor="message"> Текст обращения
                             <S.FormArea required name="message" id=""></S.FormArea>
                         </S.FormName>
-                        <S.SubmitButton type='submit' isOpen={formIsOpen}>Send</S.SubmitButton>
+                        <S.SubmitButton type='submit' isOpen={formIsOpen} >Send</S.SubmitButton>
                     </S.ContactsForm>
                 </FlexWrapper>
             </Container>
