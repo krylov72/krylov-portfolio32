@@ -1,4 +1,4 @@
-# Denis Novik Portfolio (Collaboration with other students)
+# Denis Novik Portfolio (Collaboration with other student)
 
 Добро пожаловать в учебное портфолио (делалось  исключительно для получения практического опыта работы с различными UI библиотеками)! 
 Это SPA , демонстрирующее навыки и проекты в области веб-разработки.
